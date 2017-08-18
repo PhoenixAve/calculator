@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 0;
+  font-family: '微软雅黑';
+}
+
+.unselectable {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.calculator {
+  font-size: 14px;
+  width: 390px;
+  background-color: #fff;
+  box-shadow: 0 0 20px #ccc;
+  margin: 100px auto;
+  border-radius: 4px;
+}
+
+.calculator-caption {
+  background-color: #03A3E3;
+}
+
+.control {
+  display: flex;
+  height: 60px;
+  line-height: 60px;
+  color: #fff;
+  font-size: 0;
+}
+
+.control span {
+  display: inline-block;
+  font-size: 18px;
+  cursor: pointer;
+  height: 100%;
+}
+
+.control .prev,
+.control .next {
+  flex: 0 0 50px;
+  height: 100%;
+  text-align: center;
+  font-size: 0;
+}
+
+.control .prev span,
+.control .next span {
+  width: 20px;
+}
+
+.control .time {
+  flex: 1;
+  text-align: center;
+  height: 100%;
+}
+
+.control .time span {
+  font-size: 18px;
+  cursor: pointer;
+  margin: 0 2px;
+}
+
+.calculator-header {
+  color: #999;
+  padding: 0 20px;
+}
+
+.week {
+  display: flex;
+}
+
+.week span {
+  flex: 0 0 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.calculator-body {
+  background-color: #fff;
+  padding: 0 20px;
+}
+
+.day {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.day li {
+  list-style: none;
+  flex: 0 0 50px;
+  line-height: 44px;
+  text-align: center;
+  height: 50px;
+  border-radius: 50px;
+  border: 3px double transparent;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 5px 0;
+  font-weight: bold;
+  color: #555;
+}
+
+.day li:hover {
+  border-color: #aaa;
+}
+
+.day li.now,
+.day li.now:hover {
+  color: #fff;
+  background-color: #03A3E3;
+  border-color: transparent;
+}
+
+.day li.active,
+.day li.active:hover {
+  border-color: #03A3E3;
+}
+
+.day li.forbid,
+.day li.forbid:hover {
+  opacity: 0.4;
+  cursor: not-allowed;
+  border-color: transparent;
+}
+
+.day li.not,
+.day li.not:hover {
+  cursor: auto;
+  border-color: transparent;
+}
+
+.calculator-foot {
+  background-color: #fff;
+}
+.calculator-foot .btn-group {
+  display: flex;
+  height: 60px;
+}
+.calculator-foot .btn-wrap {
+  flex: 1;
+  line-height: 100%;
+  text-align: center;
+}
+.calculator-foot .btn-wrap span {
+  width: 80%;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  border-radius: 6px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+}
+
+.calculator-foot .btn-wrap span.sure {
+  background-color: #03A3E3;
+}
+
+.calculator-foot .btn-wrap span.cancel {
+  background-color: #ccc;
+}
